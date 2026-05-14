@@ -36,5 +36,5 @@ Genera en segundos una estructura de carpetas lista para producción, con separa
 Para crear un nuevo proyecto a partir de esta plantilla, ejecuta:
 
 ```bash
-cookiecutter https://github.com/TU_USUARIO/cookiecutter-fastapi-clean.git
+cookiecutter https://github.com/dvnber10/cookiecutter-fastapi-clean
 ```
