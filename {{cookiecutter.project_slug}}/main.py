@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from api.routes import router as api_router
+from infraestructure.data.database import engine, Base
 
 app = FastAPI(
     title="{{ cookiecutter.project_name }}",
@@ -10,5 +11,5 @@ app = FastAPI(
 app.include_router(api_router, prefix="/api")
 
 # Crear tablas automáticamente en desarrollo (opcional)
-from .infraestructure.data.database import engine, Base
+
 Base.metadata.create_all(bind=engine)
