@@ -1,0 +1,6 @@
+{
+    "project_name": "My FastAPI Project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "author": "Edgar Duvan Bernal Acero",
+    "description": "A FastAPI project with Clean Architecture"
+}
