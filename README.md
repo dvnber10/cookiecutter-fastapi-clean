@@ -38,3 +38,25 @@ Para crear un nuevo proyecto a partir de esta plantilla, ejecuta:
 ```bash
 cookiecutter https://github.com/dvnber10/cookiecutter-fastapi-clean
 ```
+Reemplaza TU_USUARIO por tu nombre de usuario de GitHub (o la URL completa de tu repositorio).
+
+Cookiecutter te hará unas preguntas sencillas:
+
+- project_name: nombre descriptivo del proyecto (ej: "ReservaYa").
+
+- project_slug: nombre del directorio (se genera automáticamente).
+
+- author: tu nombre o el de tu equipo.
+
+- description: breve descripción del propósito del proyecto.
+
+Luego accede a la carpeta generada, instala dependencias y ejecuta:
+
+```bash
+cd tu_proyecto
+python -m venv venv
+source venv/bin/activate   # En Windows: venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+Abre tu navegador en http://localhost:8000/api/health para ver el endpoint de prueba, o en http://localhost:8000/docs para ver Swagger UI.
